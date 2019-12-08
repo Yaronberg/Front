@@ -1,0 +1,30 @@
+table {
+	font-family: Sans-Serif;
+	border-width: 2px;
+	border-color: black;
+	font-size: 20px;
+	width: 600px;
+	text-align: left;
+	border-collapse: collapse;
+	background-color: #0468BE;
+	cursor: pointer;
+}
+table th{
+	padding: 12px 10px;
+	border: 1.5px solid;
+	border-bottom: 3px solid black;
+	cursor: pointer;
+}
+table td{
+	border: 1.5px solid;
+	padding: 12px 10px;
+}
+.even {
+	background-color: #0428B1
+}
+.odd {
+	background-color: #2428B1
+}
+tr:hover{
+	background-color: #2555A1
+}
