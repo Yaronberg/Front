@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ВерсткаПростойФормы</title>
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form class="Form">
+		<div class="FormHeader">
+			<h1>Checkout form</h1>
+		</div>
+		<div class="FormPersonal">
+			<input class="UP" type="text" placeholder="First name" name="FirstName">
+			<input class="UP" type="text" placeholder="Last name" name="LastName">
+			<br>
+			<input class="Down" type="text" placeholder="E-mail" name="E-mail">
+			<input class="Down" type="text" placeholder="Phone" name="Phone">
+		</div>
+		<div class="FormAddress">
+			<select name="MainForm">
+				 <option style="display: none;">Country</option>
+					<option>Canada</option>
+					<option>Czechia</option>
+					<option>Germany</option>
+					<option>Poland</option>
+					<option>Ukraine</option>
+			</select>
+			<input type="text" placeholder="City" name="City">
+			<input type="text" placeholder="Post Code" name="PostCode">
+			<br>
+			<input type="text" placeholder="Address" name="Address">
+			<br>
+			<textarea rows="3" maxlength="240" placeholder="Addtional info"></textarea>
+		</div>
+		<div class="FormPayment">
+			<div class="PaymentSystem">
+				<label class="container">Visa
+					<input type="radio" checked="checked" name="radio">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">MasterCard
+					<input type="radio" checked="checked" name="radio">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">PayPal
+					<input type="radio" checked="checked" name="radio">
+					<span class="checkmark"></span>
+				</label>
+    <br>
+   </div>
+    <br>
+    <input type="text" placeholder="Name on card" name="NameCard">
+    <br>
+    <input type="text" placeholder="Card numberd" name="CardNumberd">
+    <input type="text" placeholder="CVV2" name="CVV">
+    <br>
+    <label class="ED">Expiration date</label>
+    <select>
+    	<option style="display: none;">Month</option>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
+				<input type="text" placeholder="Year" name="Year">
+		</div>
+		<div class="FormButton">
+			<button>Contionue</button>		
+		</div>
+	</form>
+</body>
+</html>
