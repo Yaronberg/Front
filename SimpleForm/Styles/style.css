@@ -70,6 +70,31 @@ input[type="text"] {
  margin-left: 31px;
 }
 
+.user {
+	background-color: white;
+	background-image: url(../Icons/user.svg);
+	background-size: 14px;
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+}
+
+.email {
+	background-color: white;
+	background-image: url(../Icons/mail.svg);
+	background-size: 14px;
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+}
+
+.phone {
+	background-color: white;
+	background-image: url(../Icons/phone.svg);
+	background-size: 14px;
+ background-position: 10px 10px;
+ background-repeat: no-repeat;
+}
+
+.border 
 *::placeholder {
 	color: #aeaeaf;
 }
