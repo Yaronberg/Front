@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+
+  background: linear-gradient(
+        225deg,
+        transparent 24.5%,
+        #449cb4 24.6%,
+        transparent 24.8%
+      )
+      37px -37px,
+    linear-gradient(135deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      37px 111px,
+    linear-gradient(135deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      37px 37px,
+    linear-gradient(225deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      37px 37px,
+    linear-gradient(135deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      74px 0px,
+    linear-gradient(225deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      74px 0px,
+    linear-gradient(135deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      74px 74px,
+    linear-gradient(225deg, transparent 24.5%, #449cb4 24.6%, transparent 24.8%)
+      74px 74px;
+  background-size: 148px 148px;
+  background-color: #e8f4f2;
+}
+
+.board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.wrap {
+  width: 300px;
+  margin: 0 3px;
+  border-radius: 4px;
+  background-color: #9aaae4;
+}
+
+.list-header {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.list-cards {
+  min-height: 30px;
+  padding: 0px 1px 10px 1px;
+
+}
+.card {
+  display: block;
+  height: auto;
+  width: inherit;
+  margin: 5px 6px;
+  padding: 1px 4px;
+  background-color: #e4e5eb;
+  border-radius: 4px;
+  white-space: normal;
+  text-align: left;
+  cursor: pointer;
+}
+
+.add-card {
+  margin: 5px 5px;
+  padding: 4px;
+  padding-left: 26px;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-card-text {
+  text-decoration: none;
+  color: #000000;
+}
+
+.icon{
+  background-image: url(../DragDrop/plus.svg);
+  background-size: 12px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+  /* fill: #e8f4f2; */
+}
+.card:hover {
+  background: #ced9ff;
+}
+
+.card-text, .add-card, .add-card-text, .list-header {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.add-card:hover {
+  background-color: #fafafac7;
+}
+
+ /* .card-shadow {
+  box-sizing: border-box;
+  display: block;
+  height: inherit;
+  width: inherit;
+  background-color: #0000008a;
+  border: solid 1px salmon;
+  font-size: 16px; 
+} */
+
+.cardenter {
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+}
