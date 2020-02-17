@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <div class="apartment column">
+      <select id="room" data-bind="value: enddate">
+      <option value hidden>Выберите комнату</option>
+      <option value="studio">studio</option>
+      <option value="1bed">1bed</option>
+      <option value="2bed">2bed</option>
+    </select>
+    </div>
+
+    <div class="date column">
+      <div>
+        <span>С</span>
+        <input class="days" id="startdate" type="date" data-bind="value: enddate">
+      </div>
+
+      <div>
+        <span>По</span>
+        <input class="days" id="enddate" type="date" data-bind="value: enddate">
+      </div>
+    </div>
+    
+    <div class="price column">
+      <span >Количество ночей: <span id="days" data-bind="text: days"></span></span> <br>
+      <span>Стоимость: <span id="sum" data-bind="text: sum"> UAH</span></span>
+    </div>
+  </div>
+  <script src="MyKnockout.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

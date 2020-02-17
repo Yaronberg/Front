@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.main {
+  height: 500px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.column, .btn {
+  margin: 10px;
+}
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: none;
+  text-align: right;
+}
+
+.days {
+  font-size: 16px;
+  border: none;
+}
+
+.btn {
+  height: 30px;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: lightgray;
+}
